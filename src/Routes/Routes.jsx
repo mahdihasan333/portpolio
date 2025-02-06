@@ -1,27 +1,32 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
-import Projects from "../Pages/Projects/Projects";
+import Project1 from "../Pages/Projects/Project1";
+import Project2 from "../Pages/Projects/Project2";
+import Project3 from "../Pages/Projects/Project3";
 
 
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <MainLayout/>,
+        element: <MainLayout />,
         children: [
             {
                 path: '/',
-                element: <Home/>
+                element: <Home />
             },
             {
-                path: '/projects',
-                element: <Projects/>
+                path: '/projects1',
+                element: <Project1 />
             },
             {
-                path: '/projects',
-                element: <Projects/>
+                path: '/projects2',
+                element: <Project2 />
             },
-
+            {
+                path: '/projects3',
+                element: <Project3 />
+            },
         ]
     }
 ])
