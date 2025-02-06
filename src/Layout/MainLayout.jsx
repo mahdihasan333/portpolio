@@ -9,7 +9,7 @@ const MainLayout = () => {
             <div className='w-11/12 mx-auto min-h-[calc(100vh-68px)]'>
                 <Outlet />
             </div>
-            <h1 className="text-3xl font-bold text-[#F4A261] ">Mahdi</h1>
+            
             <Footer />
         </div>
     );

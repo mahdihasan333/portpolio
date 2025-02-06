@@ -1,8 +1,8 @@
 
 const Project2 = () => {
     return (
-        <div>
-            
+        <div className="text-white">
+            project 2
         </div>
     );
 };
