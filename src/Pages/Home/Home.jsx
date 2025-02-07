@@ -3,6 +3,7 @@ import Contact from "../../Components/Contact/Contact";
 import AboutMe from "../../Components/AboutMe/AboutMe";
 import Project from "../../Components/Project/Project";
 import Skills from "../../Components/Skills/Skills";
+import Header from "../../Components/Header/Header";
 
 const Home = () => {
     return (
@@ -12,6 +13,8 @@ const Home = () => {
                 <link rel="canonical" href="https://www.tacobell.com/" />
             </Helmet>
             
+            <Header/>
+
             <AboutMe/>
 
             <Skills/>

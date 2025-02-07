@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const Project = () => {
     return (
         <section id="project" className="text-white ">
-            <div className="flex flex-col justify-center items-center gap-3 font-bold">
-                <h2>My Projects</h2>
-                <h6 className="text-center">
+            <div className="flex flex-col justify-center items-center gap-3 font-bold pb-10">
+                <h2 className="text-5xl font-bold">My Projects</h2>
+                <h6 className="text-center ">
                     Explore three of my top projects that highlight my web development journey. Each project card features the tech stack, live site, GitHub link, challenges faced, and future improvement plans, reflecting my growth and problem-solving skills in coding</h6>
             </div>
 
@@ -19,18 +19,13 @@ const Project = () => {
                             src="https://i.ibb.co.com/VpVVmMP3/Screenshot-2025-02-05-at-5-13-34-PM.png"
                             alt="pic" />
                     </figure>
-                    <div className="card-body p-2">
-                        <h2 className="card-title text-2xl lg:text-5xl font-bold text-black">New album is released!</h2>
-                        <p className="my-2">Click the button to listen on Spotiwhy app.</p>
+                    <div className="card-body p-2 lg:w-[50%]">
+                        <h2 className="card-title text-2xl lg:text-5xl font-bold text-black">Full-Stack Online Marketplace</h2>
+                        <p className="my-2">A full-stack web application where users can browse job postings, bid on jobs, and manage job listings. Features include authentication, job management, bidding, and user profiles</p>
 
-                        <ul className="space-y-2">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
+
                         {/* technology */}
-                        <div className="flex flex-wrap lg:gap-3 items-center">
+                        <div className="flex flex-wrap gap-1 justify-center lg:gap-3 items-center">
                             <h6 className="p-3 bg-[#f4a261] badge">Tailwind CSS</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">DaisyUI</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">ReactJS</h6>
@@ -62,18 +57,13 @@ const Project = () => {
                             src="https://i.ibb.co.com/hTrhKQj/Screenshot-2025-02-05-at-5-37-28-PM.png"
                             alt="pic" />
                     </figure>
-                    <div className="card-body p-2">
-                        <h2 className="card-title text-2xl lg:text-5xl font-bold text-black">New album is released!</h2>
-                        <p className="my-2">Click the button to listen on Spotiwhy app.</p>
+                    <div className="card-body p-2 lg:w-[50%]">
+                        <h2 className="card-title text-2xl lg:text-5xl font-bold text-black">Pet Adoption Platform</h2>
+                        <p className="my-2">Peddy is an innovative pet adoption platform that connects potential pet owners with animals in need. It offers a user-friendly interface to browse pets, learn about their backgrounds, and adopt them easily. The platform also supports shelters by streamlining the adoption process.</p>
 
-                        <ul className="space-y-2">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
+
                         {/* technology */}
-                        <div className="flex flex-wrap lg:gap-3 items-center">
+                        <div className="flex flex-wrap gap-1 justify-center lg:gap-3 items-center">
                             <h6 className="p-3 bg-[#f4a261] badge">Tailwind CSS</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">DaisyUI</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">ReactJS</h6>
@@ -81,13 +71,13 @@ const Project = () => {
                         </div>
 
                         <div className="flex text-sm gap-2 lg:text-lg">
-                            <Link to='/projects1'>
+                            <Link to='/projects2'>
                                 <button className="btn bg-[#f4a261]" >view Details</button>
                             </Link>
-                            <Link to='https://solosphere-212f2.web.app/' target="_blank">
+                            <Link to='https://assignment-6-pet-adoption.surge.sh/' target="_blank">
                                 <button className="btn bg-[#f4a261]" >live link</button>
                             </Link>
-                            <Link to='https://github.com/mahdihasan333/solosphere' target="_blank">
+                            <Link to='https://github.com/mahdihasan333/pet-adoption' target="_blank">
                                 <button className="btn bg-[#f4a261]" >github repo</button>
                             </Link>
                         </div>
@@ -105,18 +95,13 @@ const Project = () => {
                             src="https://i.ibb.co.com/23jtvhjQ/Screenshot-2025-02-06-at-5-37-36-PM.png"
                             alt="pic" />
                     </figure>
-                    <div className="card-body p-2">
+                    <div className="card-body p-2 lg:w-[50%]">
                         <h2 className="card-title text-2xl lg:text-5xl font-bold text-black">New album is released!</h2>
                         <p className="my-2">Click the button to listen on Spotiwhy app.</p>
 
-                        <ul className="space-y-2">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                        </ul>
+
                         {/* technology */}
-                        <div className="flex flex-wrap lg:gap-3 items-center">
+                        <div className="flex flex-wrap lg:gap-3 gap-1 justify-center items-center">
                             <h6 className="p-3 bg-[#f4a261] badge">Tailwind CSS</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">DaisyUI</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">ReactJS</h6>
@@ -139,9 +124,6 @@ const Project = () => {
 
                     </div>
                 </div>
-
-
-
 
 
             </div>

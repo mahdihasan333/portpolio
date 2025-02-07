@@ -1,15 +1,14 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const NavOptions = [
-        { path: "home", name: "Home" },
-        { path: "about", name: "About" },
-        { path: "skills", name: "Skills" },
-        { path: "project", name: "Project" },
-        { path: "contact", name: "Contact" },
+        { path: "#home", name: "Home" },
+        { path: "#about", name: "About" },
+        { path: "#skills", name: "Skills" },
+        { path: "#project", name: "Project" },
+        { path: "#contact", name: "Contact" },
     ];
 
     return (
@@ -18,7 +17,7 @@ const Navbar = () => {
             <div className="fixed top-0 left-0 w-full bg-opacity-80 backdrop-blur-md shadow-md flex items-center justify-between px-6 py-4 z-[100]">
                 {/* Navbar Start */}
                 <div className="navbar-start">
-                    <a className="text-2xl font-bold text-[#f4a261]">{'<Mahdi/>'}</a>
+                    <a href="#" className="text-2xl font-bold text-[#f4a261]">{'<Mahdi/>'}</a>
                 </div>
 
                 {/* Navbar Center (Desktop) */}
@@ -26,15 +25,12 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 space-x-6 text-white">
                         {NavOptions.map((option, index) => (
                             <li key={index}>
-                                <Link
-                                    to={option.path}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-70}  // Navbar height adjust করার জন্য
+                                <a
+                                    href={option.path}
                                     className="hover:text-gray-300 transition duration-300 cursor-pointer"
                                 >
                                     {option.name}
-                                </Link>
+                                </a>
                             </li>
                         ))}
                     </ul>
@@ -73,18 +69,15 @@ const Navbar = () => {
                 <ul className="text-white text-2xl space-y-4">
                     {NavOptions.map((option, index) => (
                         <li key={index} className="w-full text-center">
-                            <Link
-                                to={option.path}
-                                smooth={true}
-                                duration={500}
-                                offset={-100}
+                            <a
+                                href={option.path}
                                 className="block w-full px-6 py-3 rounded-lg bg-gray-800/70 text-white 
                           hover:bg-gray-700 hover:scale-105 transition-all duration-300 
                           shadow-md hover:shadow-lg cursor-pointer"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {option.name}
-                            </Link>
+                            </a>
                         </li>
                     ))}
                 </ul>
