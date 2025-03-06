@@ -33,7 +33,7 @@ const Project1 = () => {
                 </p>
 
                 {/* Live & GitHub Links */}
-                <div className="flex space-x-4 mb-6">
+                <div className="flex flex-col items-center justify-center gap-4 mb-6">
                     <a
                         href="https://solosphere-212f2.web.app/"
                         target="_blank"

@@ -25,7 +25,7 @@ const Project = () => {
 
 
                         {/* technology */}
-                        <div className="flex flex-wrap gap-1 justify-center lg:gap-3 items-center">
+                        <div className="flex flex-wrap lg:justify-start gap-1 justify-center lg:gap-3 items-center">
                             <h6 className="p-3 bg-[#f4a261] badge">Tailwind CSS</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">DaisyUI</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">ReactJS</h6>
@@ -63,7 +63,7 @@ const Project = () => {
 
 
                         {/* technology */}
-                        <div className="flex flex-wrap gap-1 justify-center lg:gap-3 items-center">
+                        <div className="flex flex-wrap gap-1 lg:justify-start justify-center lg:gap-3 items-center">
                             <h6 className="p-3 bg-[#f4a261] badge">Tailwind CSS</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">DaisyUI</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">ReactJS</h6>
@@ -96,12 +96,12 @@ const Project = () => {
                             alt="pic" />
                     </figure>
                     <div className="card-body p-2 lg:w-[50%]">
-                        <h2 className="card-title text-2xl lg:text-5xl font-bold text-black">New album is released!</h2>
-                        <p className="my-2">Click the button to listen on Spotiwhy app.</p>
+                        <h2 className="card-title text-2xl lg:text-5xl font-bold text-black">BPL DREAM 11</h2>
+                        <p className="my-2">A fantasy cricket team selection platform where users can create Dream 11 teams, view player stats, manage selections, claim credits, and subscribe for updates. The platform offers intuitive navigation and player management tools.</p>
 
 
                         {/* technology */}
-                        <div className="flex flex-wrap lg:gap-3 gap-1 justify-center items-center">
+                        <div className="flex flex-wrap lg:gap-3 lg:justify-start gap-1 justify-center items-center">
                             <h6 className="p-3 bg-[#f4a261] badge">Tailwind CSS</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">DaisyUI</h6>
                             <h6 className="p-3 bg-[#f4a261] badge">ReactJS</h6>

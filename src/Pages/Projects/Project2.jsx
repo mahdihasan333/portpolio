@@ -31,7 +31,7 @@ const Project2 = () => {
                 </p>
 
                 {/* Live & GitHub Links */}
-                <div className="flex space-x-4 mb-6">
+                <div className="flex flex-col items-center justify-center gap-4 mb-6">
                     <a 
                         href="https://assignment-6-pet-adoption.surge.sh/" 
                         target="_blank" 
