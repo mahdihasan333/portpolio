@@ -59,7 +59,7 @@ const Header = () => {
             </div>
 
             <div className="mt-6 flex gap-4 justify-center md:justify-start">
-              <Link to="https://drive.google.com/file/d/1HSS2L6MF2zTElE1MY4GtIQdBFAhDtZXU/view?usp=sharing">
+              <Link to="https://drive.google.com/file/d/14Nw-RFmHYjly3ug20AxBOOVfHXOekmBj/view?usp=sharing" target="_blank">
                 <button className="bg-[#f4a261] text-white px-6 py-2 rounded-lg">
                   Resume
                 </button>
