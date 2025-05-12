@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import image from "../../../public/wmremove-transformed.png";
 import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
@@ -5,9 +6,10 @@ import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 const Header = () => {
   return (
     <section id="home">
-      <section className="text-white min-h-screen flex items-center justify-center px-6">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-10">
-          <div className="text-center lg:text-left">
+      <section className="text-white py-20 flex items-center justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Left side text */}
+          <div className="text-center lg:text-left max-w-xl">
             <h1 className="text-4xl md:text-5xl font-bold">
               Hi, I'm <span className="text-white">Mahdi Hassan</span>
             </h1>
@@ -18,11 +20,11 @@ const Header = () => {
               I am a passionate Web Developer with expertise in frontend
               technologies and a growing knowledge of backend development. I
               love solving problems, building user-friendly interfaces, and
-              continuously improving my skills to stay ahead in the
-              ever-evolving world of technology.
+              continuously improving my skills to stay ahead in the ever-evolving
+              world of technology.
             </p>
 
-            {/* Social Icons using React-Icons */}
+            {/* Social Icons */}
             <div className="mt-6 flex gap-6 justify-center md:justify-start text-3xl">
               <a
                 href="https://github.com/mahdihasan333"
@@ -58,8 +60,12 @@ const Header = () => {
               </a>
             </div>
 
+            {/* Buttons */}
             <div className="mt-6 flex gap-4 justify-center md:justify-start">
-              <Link to="https://drive.google.com/file/d/14Nw-RFmHYjly3ug20AxBOOVfHXOekmBj/view?usp=sharing" target="_blank">
+              <Link
+                to="https://drive.google.com/file/d/14Nw-RFmHYjly3ug20AxBOOVfHXOekmBj/view?usp=sharing"
+                target="_blank"
+              >
                 <button className="bg-[#f4a261] text-white px-6 py-2 rounded-lg">
                   Resume
                 </button>
@@ -71,8 +77,42 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="w-full">
-            <img src={image} alt="pic" className="w-full ml-12" />
+          {/* Right side spinner & profile image */}
+          <div className="relative flex justify-center items-center">
+            {/* First Spinner */}
+            <motion.div
+              className="absolute w-[380px] h-[380px] rounded-full border-t-[6px] border-[#f4a261] z-0"
+              animate={{ rotate: 360 }}
+              transition={{
+                repeat: Infinity,
+                duration: 8,
+                ease: "linear",
+              }}
+              style={{
+                clipPath: "inset(0 0 50% 0)", // top half only
+              }}
+            />
+            
+            {/* Second Spinner (with a faster rotation) */}
+            <motion.div
+              className="absolute w-[420px] h-[420px] rounded-full border-t-[6px] border-[#f4a261] z-0"
+              animate={{ rotate: -360 }}
+              transition={{
+                repeat: Infinity,
+                duration: 8,
+                ease: "linear",
+              }}
+              style={{
+                clipPath: "inset(0 0 50% 0)", // top half only
+              }}
+            />
+            
+            {/* Profile Image */}
+            <img
+              src={image}
+              alt="Mahdi Hassan"
+              className="w-[350px] h-[350px] rounded-full object-cover z-10 "
+            />
           </div>
         </div>
       </section>
