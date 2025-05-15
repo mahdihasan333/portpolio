@@ -15,7 +15,7 @@ const ContactForm = () => {
         <h2 className="text-5xl font-bold">Contact Me</h2>
         <h6>
           You can contact me at the places mentioned below. I will try to get
-          back to you as fast as I can.
+          back to you as fast as I can
         </h6>
       </div>
 
